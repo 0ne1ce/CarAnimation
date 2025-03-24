@@ -125,10 +125,10 @@ final class ViewController: UIViewController {
             wheel.setHeight(60)
             wheel.setWidth(60)
             if i == 1 {
-                wheel.pinLeft(to: car, 15)
+                wheel.pinLeft(to: linesContainer[0].trailingAnchor, 3)
             }
             else {
-                wheel.pinRight(to: car, 15)
+                wheel.pinRight(to: linesContainer[linesContainer.endIndex - 1].leadingAnchor, 3)
             }
             wheels.append(wheel)
         }
